@@ -20,6 +20,15 @@ public class Main {
             max = c;
         return max;
     }
+    private static String findStringMax(String str1, String str2, String str3) {
+        String max = str1;
+        if (str2.compareTo(max) > 0)
+            max = str2;
+        if (str3.compareTo(max) > 0)
+            max = str3;
+        return max;
+    }
+
     public static void main(String[] args) {
         System.out.println("Finding the Maximum number from given numbers:");
         System.out.println("Enter 3 Integer numbers: ");
@@ -33,6 +42,11 @@ public class Main {
         Float b = scanner.nextFloat();
         Float c = scanner.nextFloat();
         System.out.println("Max: "+findFlotMax(a,b,c));
+        System.out.println("Enter 3 Strings");
+        String str1 = scanner.next();
+        String str2 = scanner.next();
+        String str3 = scanner.next();
+        System.out.println("Max: "+findStringMax(str1,str2,str3));
 
     }
 }
