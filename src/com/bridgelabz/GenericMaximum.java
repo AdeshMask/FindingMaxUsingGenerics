@@ -1,17 +1,7 @@
 package com.bridgelabz;
 
 public class GenericMaximum<T extends Comparable <T>>{
-    T x,y,z;
-
-    public GenericMaximum(T x,T y,T z){
-        this.x =  x;
-        this.y = y;
-        this.z = z;
-    }
-
-    public GenericMaximum() {
-    }
-
+  
     public <T extends Comparable<T>> T findMax(T x,T y,T z){
         T max = x;
         if (y.compareTo(max) > 0)
