@@ -1,16 +1,6 @@
 package com.bridgelabz;
 
 public class GenericMaximum<T extends Comparable <T>>{
-    T x,y,z;
-
-    public GenericMaximum(T x,T y,T z){
-        this.x =  x;
-        this.y = y;
-        this.z = z;
-    }
-
-    public GenericMaximum() {
-    }
 
     public <T extends Comparable<T>> T findMax(T x,T y,T z){
         T max = x;
@@ -23,7 +13,7 @@ public class GenericMaximum<T extends Comparable <T>>{
     public static void main(String[] args) {
         GenericMaximum max = new GenericMaximum();
         System.out.println("Maximum of 3 Integer numbers: ");
-        Integer aInt = 10,bInt = 32,cInt = 211;
+        Integer aInt = 10,bInt = 32,cInt = 21;
         System.out.println("Maximum of 3 Integer array is: "+max.findMax(aInt,bInt,cInt));
         Float pFloat = 12.0f,qFloat = 43.7f,rFloat = 54.0f;
         System.out.println("Maximum of 3 Integer array is: "+max.findMax(pFloat,qFloat,rFloat));
